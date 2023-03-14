@@ -1,0 +1,22 @@
+.yemekCard{
+    width: 250px;
+    height: 350px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+    span{
+        height: 30%;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+}

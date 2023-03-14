@@ -1,0 +1,126 @@
+.Navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #013914;
+    color: white;
+    .container{
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        align-items: center;
+        .logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex:1;
+            .text{
+                font-weight: 500;
+                font-size: 16px;
+            }
+            .info{
+                font-weight: 400;
+                font-size: 13px;
+                color: rgb(141, 139, 139);
+                
+            }
+        }        
+        .searchBar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            flex: 1.5;
+            margin-right: 10px;
+            .searchInput{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .icon{
+                    width: 20px;
+                    height: 20px;
+                    margin: 10px;
+                }
+                input{
+                    border: none;
+                    outline: none;
+
+                    &::placeholder {
+                        color: gray;
+                      }
+                }
+            }
+            .searchbtn{
+                width: 80px;
+                height: 40px;
+                border: none;
+                background-color: #1dbf73;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        .links{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+            flex: 1;
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                position: relative;
+                .userimage{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .options{
+                    position: absolute;
+                    top: 60px;
+                    right: 0;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 10px;
+                    border: 1px solid lightgray;
+                    display: flex;
+                    flex-direction: column;
+                    width: max-content;
+                    gap: 10px;
+                    .link{
+                        color: gray;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                    span{
+                        color: gray;
+                        font-weight: 400;
+                        font-size: 14px;  
+                    }
+                }
+            }
+            button{
+                padding: 5px 10px;
+                border :1px solid white;
+                background-color: transparent;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+
+                &:hover{
+                    border :1px solid #1dbf73;
+                    background-color: #1dbf73; 
+                }
+            }
+        }
+    }
+}
